@@ -18,7 +18,7 @@ class SinatraApp < Sinatra::Base
 	end
 
 	#send the (word, color) pair to be pushed back to the client
-	get '/color/:word' do
+	post '/color' do
 	  color = request.cookies['color']
 	  word = params[:word]
 	  puts "Your #{word} will be of color #{color}"

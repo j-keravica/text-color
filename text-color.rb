@@ -3,9 +3,10 @@
 
 class TextColor < Sinatra::Base
 
-	#configure do
-	#	enable :sessions
-	#end
+	configure do
+		enable :sessions
+		set :session_secret, '*&(^B234'
+	end
 
 	helpers do
 	  def choose_color(color)

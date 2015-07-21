@@ -1,6 +1,3 @@
-require 'sinatra/base'
-
-
 class TextColor < Sinatra::Base
 
 	configure do

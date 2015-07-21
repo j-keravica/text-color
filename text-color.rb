@@ -3,10 +3,10 @@
 
 class TextColor < Sinatra::Base
 
-	configure do
-		enable :sessions
-		set :session_secret, '*&(^B234'
-	end
+	#configure do
+	#	enable :sessions
+	#	set :session_secret, '*&(^B234'
+	#end
 
 	helpers do
 	  def choose_color(color)
@@ -32,10 +32,10 @@ class TextColor < Sinatra::Base
 	end
 
 	#store color information for the user
-	get '/set/:color' do
-		color = params[:color]
-		response.set_cookie "color", color
-	end
+	#get '/set/:color' do
+	#	color = params[:color]
+	#	response.set_cookie "color", color
+	#end
 
 	run! if app_file == $0
 

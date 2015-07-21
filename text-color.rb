@@ -23,7 +23,7 @@ class TextColor < Sinatra::Base
 	  word = params[:word]
 	  puts "Your #{word} will be of color #{color}"
 	  puts RestClient.post(
-	  	'http://localhost:5678/send',
+	  	ENV['SEND_URL'] + '/send',
 	  	{:word => word,
 	  	:color => choose_color(color)}
 	  	)

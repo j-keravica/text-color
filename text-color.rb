@@ -1,3 +1,6 @@
+#require 'sinatra/base'
+#require 'rest-client'
+
 class TextColor < Sinatra::Base
 
 	configure do

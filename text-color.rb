@@ -20,8 +20,9 @@ class TextColor < Sinatra::Base
 
 	#send the (word, color) pair to be pushed back to the client
 	post '/color' do
-	  color = request.cookies['color']
+	  #color = request.cookies['color']
 	  word = params[:word]
+	  color = params[:color]
 	  puts "Your #{word} will be of color #{color}"
 	  puts RestClient.post(
 	  	ENV['SEND_URL'] + '/send',

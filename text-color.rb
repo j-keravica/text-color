@@ -19,7 +19,7 @@ class TextColor < Sinatra::Base
 	  	ENV['SEND_URL'] + '/send',
 	  	{:word => word,
 	  	:color => choose_color(color)}
-	  	)
+	  )
 	end
 
 	run! if app_file == $0

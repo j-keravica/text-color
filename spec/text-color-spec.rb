@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-require "../text-color"  # <-- your sinatra app
+require "../text-color"
 require 'rspec'
 
 describe 'Text Color' do

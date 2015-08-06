@@ -1,8 +1,3 @@
-require 'rubygems'
-require 'bundler'
+require "./environment.rb"
 
-Bundler.require
-
-require './text-color'
-
-run TextColor
+run Rack::URLMap.new("/" => TextColor)

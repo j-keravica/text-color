@@ -44,6 +44,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  rack
   rack-test
   rest-client (~> 1.8.0)
   rspec

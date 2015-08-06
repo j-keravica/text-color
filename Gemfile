@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "rack"
 gem 'sinatra'
 gem 'rest-client', '~> 1.8.0'
 

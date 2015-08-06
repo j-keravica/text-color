@@ -18,8 +18,10 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require "rack/test"
-require "byebug"
-require "sinatra"
+require "./environment.rb"
+
+ENV["RACK_ENV"] = "test"
+ENV["SEND_URL"] = 'http://localhost:5678'
 
 RSpec.configure do |config|
 

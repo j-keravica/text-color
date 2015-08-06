@@ -1,8 +1,8 @@
-require "./sinatra/colorhelpers"
+require "./lib/colorhelpers"
 
 class TextColor < Sinatra::Base
 
-	helpers Sinatra::ColorHelpers
+	include ColorHelpers
 
 	post "/color" do
 	  word = params[:word]

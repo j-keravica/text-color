@@ -1,4 +1,4 @@
-require "./lib/colorhelpers"
+require "./lib/color_helpers"
 
 class TextColor < Sinatra::Base
 

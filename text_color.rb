@@ -7,11 +7,13 @@ class TextColor < Sinatra::Base
 	post "/color" do
 	  word = params[:word]
 	  color = params[:color]
-	  puts "Your #{word} will be of color #{color}"
+	  channel = params[:channel]
+	  puts "Your #{word} will be of color #{color} to channel #{channel}"
 	  RestClient.post(
 	  	ENV["SEND_URL"] + "/send",
 	  	{:word => word,
-	  	:color => choose_color(color)}
+	  	 :color => choose_color(color),
+	     :channel => channel}
 	  )
 	end
 

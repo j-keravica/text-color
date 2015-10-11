@@ -48,7 +48,7 @@ DEPENDENCIES
   dotenv
   rack
   rack-test
-  rest-client (~> 1.8.0)
+  rest-client
   rspec
   sinatra
 

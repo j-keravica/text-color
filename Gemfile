@@ -1,11 +1,15 @@
 source "https://rubygems.org"
 
+gem "rack"
 gem 'sinatra'
-gem 'rest-client', '~> 1.8.0'
+gem 'rest-client'
+gem "dotenv"
 
 group :test, :development do
   gem "rspec"
   gem "rack-test"
+  gem "byebug"
+
 end
 
 
